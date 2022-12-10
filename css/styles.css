@@ -219,11 +219,14 @@ h1 {
 }
 .thumb {
   display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 120px;
   border-radius: 4px;
   margin-bottom: 30px;
   background-color: var(--bg-secondary-color);
-  padding: 25px 100px;
+  
 }
 .icon-benefits {
   width: 70px;
@@ -336,7 +339,7 @@ h2 {
 .social-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-item {
+.social-link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -350,8 +353,8 @@ h2 {
   height: 20px;
 }
 
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -508,7 +511,7 @@ h2 {
 .social-footer-item:not(:last-child) {
   margin-right: 10px;
 }
-.social-footer-item {
+.social-footer-link {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -516,8 +519,8 @@ h2 {
   background-color: var(--footer-social-icon-bg);
   padding: 12px;
 }
-.social-footer-item:hover,
-.social-footer-item:focus {
+.social-footer-link:hover,
+.social-footer-link:focus {
   background-color: var(--accent-color);
 }
 
